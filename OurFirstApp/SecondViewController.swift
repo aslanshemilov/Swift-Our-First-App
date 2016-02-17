@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  OurFirstApp
 //
 //  Created by Joshua Johanan on 2/16/16.
@@ -8,26 +8,20 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, FirstCustomViewDelegate {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.edgesForExtendedLayout = .None
-        self.title = "First View"
-        self.view = FirstCustomView()
-        (self.view as! FirstCustomView).delegate = self
+        self.title = "Second View"
+        self.view = SecondCustomView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func buttonWasPressed(sender: UIButton)
-    {
-        self.navigationController?.pushViewController(SecondViewController(), animated: true)
     }
     
 
