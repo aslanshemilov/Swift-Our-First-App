@@ -17,6 +17,7 @@
 		E1D424661C74258E00CF8327 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D424651C74258E00CF8327 /* SecondViewController.swift */; };
 		E1D424681C7425A500CF8327 /* SecondCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D424671C7425A500CF8327 /* SecondCustomView.swift */; };
 		E1D4246A1C7425D500CF8327 /* SecondCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D424691C7425D500CF8327 /* SecondCustomView.xib */; };
+		E1D4246C1C74277D00CF8327 /* CustomTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4246B1C74277D00CF8327 /* CustomTableSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E1D424651C74258E00CF8327 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E1D424671C7425A500CF8327 /* SecondCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomView.swift; sourceTree = "<group>"; };
 		E1D424691C7425D500CF8327 /* SecondCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondCustomView.xib; sourceTree = "<group>"; };
+		E1D4246B1C74277D00CF8327 /* CustomTableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				E1D4243B1C72D00E00CF8327 /* AppDelegate.swift */,
 				E1D424421C72D00E00CF8327 /* Assets.xcassets */,
+				E1D4246B1C74277D00CF8327 /* CustomTableSource.swift */,
 				E1D424611C74238F00CF8327 /* FirstCustomView.swift */,
 				E1D424631C7423BC00CF8327 /* FirstCustomView.xib */,
 				E1D4245D1C741FE100CF8327 /* FirstViewController.swift */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4246C1C74277D00CF8327 /* CustomTableSource.swift in Sources */,
 				E1D4245E1C741FE100CF8327 /* FirstViewController.swift in Sources */,
 				E1D4243C1C72D00E00CF8327 /* AppDelegate.swift in Sources */,
 				E1D424621C74238F00CF8327 /* FirstCustomView.swift in Sources */,

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondCustomView" customModule="OurFirstApp" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="YEN-OD-vte" id="MT5-Je-c45"/>
                 <outlet property="view" destination="iN0-l3-epB" id="b0K-Zi-nBu"/>
             </connections>
         </placeholder>
@@ -21,6 +22,10 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YEN-OD-vte">
+                    <rect key="frame" x="0.0" y="37" width="592" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>

@@ -8,15 +8,23 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class SecondViewController: UIViewController, UITableViewDelegate {
+    var tableSource: CustomTableSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.edgesForExtendedLayout = .None
         self.title = "Second View"
-        self.view = SecondCustomView()
+        
+        let secondCustomView = SecondCustomView()
+        self.view = secondCustomView
+        
+        self.tableSource = CustomTableSource(tableView: secondCustomView.tableView)
+        secondCustomView.tableView.dataSource = self.tableSource
+        secondCustomView.tableView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +32,9 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("You did select item " + self.tableSource.getValueAtIndex(indexPath.row))
+    }
 
     /*
     // MARK: - Navigation

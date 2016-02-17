@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RootNavigationController: UINavigationController {
+class RootNavigationController: UINavigationController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,10 @@ class RootNavigationController: UINavigationController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("You selected cell #\(indexPath.row)!")
     }
 
     /*
