@@ -14,6 +14,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.edgesForExtendedLayout = .None
         self.title = "First View"
     }
 
