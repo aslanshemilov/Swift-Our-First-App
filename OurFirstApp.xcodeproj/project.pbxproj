@@ -12,7 +12,8 @@
 		E1D424511C72D00E00CF8327 /* OurFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D424501C72D00E00CF8327 /* OurFirstAppTests.swift */; };
 		E1D4245C1C741FA100CF8327 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4245B1C741FA100CF8327 /* RootNavigationController.swift */; };
 		E1D4245E1C741FE100CF8327 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4245D1C741FE100CF8327 /* FirstViewController.swift */; };
-		E1D424601C7421E400CF8327 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D4245F1C7421E400CF8327 /* FirstViewController.xib */; };
+		E1D424621C74238F00CF8327 /* FirstCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D424611C74238F00CF8327 /* FirstCustomView.swift */; };
+		E1D424641C7423BC00CF8327 /* FirstCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D424631C7423BC00CF8327 /* FirstCustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,8 @@
 		E1D424521C72D00E00CF8327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D4245B1C741FA100CF8327 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		E1D4245D1C741FE100CF8327 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E1D4245F1C7421E400CF8327 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		E1D424611C74238F00CF8327 /* FirstCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomView.swift; sourceTree = "<group>"; };
+		E1D424631C7423BC00CF8327 /* FirstCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstCustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 			children = (
 				E1D4243B1C72D00E00CF8327 /* AppDelegate.swift */,
 				E1D424421C72D00E00CF8327 /* Assets.xcassets */,
+				E1D424611C74238F00CF8327 /* FirstCustomView.swift */,
+				E1D424631C7423BC00CF8327 /* FirstCustomView.xib */,
 				E1D4245D1C741FE100CF8327 /* FirstViewController.swift */,
-				E1D4245F1C7421E400CF8327 /* FirstViewController.xib */,
 				E1D424471C72D00E00CF8327 /* Info.plist */,
 				E1D4245B1C741FA100CF8327 /* RootNavigationController.swift */,
 			);
@@ -177,8 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D424641C7423BC00CF8327 /* FirstCustomView.xib in Resources */,
 				E1D424431C72D00E00CF8327 /* Assets.xcassets in Resources */,
-				E1D424601C7421E400CF8327 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +201,7 @@
 			files = (
 				E1D4245E1C741FE100CF8327 /* FirstViewController.swift in Sources */,
 				E1D4243C1C72D00E00CF8327 /* AppDelegate.swift in Sources */,
+				E1D424621C74238F00CF8327 /* FirstCustomView.swift in Sources */,
 				E1D4245C1C741FA100CF8327 /* RootNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

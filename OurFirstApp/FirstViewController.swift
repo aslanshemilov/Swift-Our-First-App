@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, FirstCustomViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,8 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.edgesForExtendedLayout = .None
         self.title = "First View"
+        self.view = FirstCustomView()
+        (self.view as! FirstCustomView).delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +25,7 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func buttonWasPressed(sender: UIButton)
+    func buttonWasPressed(sender: UIButton)
     {
         print("Button was pressed")
     }
