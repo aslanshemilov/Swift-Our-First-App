@@ -23,6 +23,11 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func buttonWasPressed(sender: UIButton)
+    {
+        print("Button was pressed")
+    }
+    
 
     /*
     // MARK: - Navigation
