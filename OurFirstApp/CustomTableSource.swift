@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CustomTableSource: NSObject, UITableViewDataSource {
-    var items: [String] = ["Our", "First", "TableView"]
+    var items: [String] = ["Our", "First", "TableView", "Should", "Extend", "Farther", "Down", "The", "View"]
     
     init (tableView: UITableView){
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")

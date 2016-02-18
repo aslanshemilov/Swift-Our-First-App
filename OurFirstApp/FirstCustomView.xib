@@ -22,8 +22,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS8-3Y-QJ5">
-                    <rect key="frame" x="8" y="37" width="131" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS8-3Y-QJ5">
+                    <rect key="frame" x="235" y="285" width="131" height="30"/>
                     <state key="normal" title="Go to Second View"/>
                     <connections>
                         <action selector="buttonWasPressed:" destination="-1" eventType="touchUpInside" id="WcI-Jv-K6h"/>
@@ -31,6 +31,10 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TS8-3Y-QJ5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XSq-Dr-Q1J"/>
+                <constraint firstItem="TS8-3Y-QJ5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pvh-Q6-Xei"/>
+            </constraints>
         </view>
     </objects>
 </document>
