@@ -29,19 +29,27 @@ class FirstCustomView: UIView {
         let custom = CustomControl()
         self.view.addSubview(custom)
         custom.translatesAutoresizingMaskIntoConstraints = false
-        let top = NSLayoutConstraint(item: custom,
-            attribute: .Top,
-            relatedBy: .Equal,
-            toItem: button,
+        let bottom = NSLayoutConstraint(item: custom,
             attribute: .Bottom,
-            multiplier: 1.0,
-            constant: 8.0)
-        
-        let centerH = NSLayoutConstraint(item: custom,
-            attribute: .CenterX,
             relatedBy: .Equal,
             toItem: view,
-            attribute: .CenterX,
+            attribute: .Bottom,
+            multiplier: 1.0,
+            constant: 0.0)
+        
+        let right = NSLayoutConstraint(item: custom,
+            attribute: .Leading,
+            relatedBy: .Equal,
+            toItem: view,
+            attribute: .Leading,
+            multiplier: 1.0,
+            constant: 0.0)
+        
+        let left = NSLayoutConstraint(item: custom,
+            attribute: .Trailing,
+            relatedBy: .Equal,
+            toItem: view,
+            attribute: .Trailing,
             multiplier: 1.0,
             constant: 0.0)
         
@@ -51,17 +59,9 @@ class FirstCustomView: UIView {
             toItem: nil,
             attribute: NSLayoutAttribute.NotAnAttribute,
             multiplier: 1.0,
-            constant: 50.0)
+            constant: 100.0)
         
-        let width = NSLayoutConstraint(item: custom,
-            attribute: .Width,
-            relatedBy: .Equal,
-            toItem: nil,
-            attribute: .NotAnAttribute,
-            multiplier: 1.0,
-            constant: 200.00)
-        
-        NSLayoutConstraint.activateConstraints([top, centerH, height, width])
+        NSLayoutConstraint.activateConstraints([height, left, right, bottom])
     }
     
     required init?(coder aDecoder: NSCoder) {
