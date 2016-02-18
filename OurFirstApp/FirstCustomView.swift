@@ -26,8 +26,42 @@ class FirstCustomView: UIView {
         //add as subview
         self.addSubview(self.view)
         
-        let custom = CustomControl(frame: CGRectMake(0,0,200,50))
+        let custom = CustomControl()
         self.view.addSubview(custom)
+        custom.translatesAutoresizingMaskIntoConstraints = false
+        let top = NSLayoutConstraint(item: custom,
+            attribute: .Top,
+            relatedBy: .Equal,
+            toItem: button,
+            attribute: .Bottom,
+            multiplier: 1.0,
+            constant: 8.0)
+        
+        let centerH = NSLayoutConstraint(item: custom,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: view,
+            attribute: .CenterX,
+            multiplier: 1.0,
+            constant: 0.0)
+        
+        let height = NSLayoutConstraint(item: custom,
+            attribute: .Height,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: 50.0)
+        
+        let width = NSLayoutConstraint(item: custom,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: .NotAnAttribute,
+            multiplier: 1.0,
+            constant: 200.00)
+        
+        NSLayoutConstraint.activateConstraints([top, centerH, height, width])
     }
     
     required init?(coder aDecoder: NSCoder) {
