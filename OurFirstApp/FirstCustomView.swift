@@ -25,6 +25,9 @@ class FirstCustomView: UIView {
         self.bounds = self.view.bounds
         //add as subview
         self.addSubview(self.view)
+        
+        let custom = CustomControl(frame: CGRectMake(0,0,200,50))
+        self.view.addSubview(custom)
     }
     
     required init?(coder aDecoder: NSCoder) {
