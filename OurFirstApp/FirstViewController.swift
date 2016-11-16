@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class FirstViewController: UIViewController, FirstCustomViewDelegate {
 
@@ -18,6 +19,12 @@ class FirstViewController: UIViewController, FirstCustomViewDelegate {
         self.title = "First View"
         self.view = FirstCustomView()
         (self.view as! FirstCustomView).delegate = self
+        
+        //load google
+        let getIt :HTTPGetIt = HTTPGetIt()
+        getIt.GetMeGoogle{html in
+            (self.view as! FirstCustomView).webView.loadHTMLString(html!, baseURL: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

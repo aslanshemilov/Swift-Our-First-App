@@ -15,6 +15,7 @@ protocol FirstCustomViewDelegate {
 class FirstCustomView: UIView {
     @IBOutlet var view: UIView!
     @IBOutlet var button: UIButton!
+    @IBOutlet var webView: UIWebView!
     var delegate: FirstCustomViewDelegate?
     
     override init(frame: CGRect) {
