@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E1A0205E1DDBEEEB005FEA5A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A0205D1DDBEEEB005FEA5A /* Alamofire.framework */; };
 		E1A020601DDBEFBB005FEA5A /* HTTPGetIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0205F1DDBEFBB005FEA5A /* HTTPGetIt.swift */; };
+		E1A020641DDC0E17005FEA5A /* HTTPWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A020631DDC0E17005FEA5A /* HTTPWrapper.swift */; };
+		E1A020661DDC10AA005FEA5A /* HTTPMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A020651DDC10AA005FEA5A /* HTTPMock.swift */; };
 		E1D4243C1C72D00E00CF8327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4243B1C72D00E00CF8327 /* AppDelegate.swift */; };
 		E1D424431C72D00E00CF8327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D424421C72D00E00CF8327 /* Assets.xcassets */; };
 		E1D424511C72D00E00CF8327 /* OurFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D424501C72D00E00CF8327 /* OurFirstAppTests.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		E1A0205D1DDBEEEB005FEA5A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E1A0205F1DDBEFBB005FEA5A /* HTTPGetIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPGetIt.swift; sourceTree = "<group>"; };
+		E1A020631DDC0E17005FEA5A /* HTTPWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPWrapper.swift; sourceTree = "<group>"; };
+		E1A020651DDC10AA005FEA5A /* HTTPMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMock.swift; sourceTree = "<group>"; };
 		E1D424381C72D00E00CF8327 /* OurFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4243B1C72D00E00CF8327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D424421C72D00E00CF8327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				E1D424691C7425D500CF8327 /* SecondCustomView.xib */,
 				E1D424651C74258E00CF8327 /* SecondViewController.swift */,
 				E1A0205F1DDBEFBB005FEA5A /* HTTPGetIt.swift */,
+				E1A020631DDC0E17005FEA5A /* HTTPWrapper.swift */,
 			);
 			path = OurFirstApp;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			children = (
 				E1D424501C72D00E00CF8327 /* OurFirstAppTests.swift */,
 				E1D424521C72D00E00CF8327 /* Info.plist */,
+				E1A020651DDC10AA005FEA5A /* HTTPMock.swift */,
 			);
 			path = OurFirstAppTests;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D4246C1C74277D00CF8327 /* CustomTableSource.swift in Sources */,
+				E1A020641DDC0E17005FEA5A /* HTTPWrapper.swift in Sources */,
 				E1A020601DDBEFBB005FEA5A /* HTTPGetIt.swift in Sources */,
 				E1D4245E1C741FE100CF8327 /* FirstViewController.swift in Sources */,
 				E1D4246E1C75708300CF8327 /* CustomControl.swift in Sources */,
@@ -261,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D424511C72D00E00CF8327 /* OurFirstAppTests.swift in Sources */,
+				E1A020661DDC10AA005FEA5A /* HTTPMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

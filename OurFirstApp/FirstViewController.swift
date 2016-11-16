@@ -21,7 +21,7 @@ class FirstViewController: UIViewController, FirstCustomViewDelegate {
         (self.view as! FirstCustomView).delegate = self
         
         //load google
-        let getIt :HTTPGetIt = HTTPGetIt()
+        let getIt :HTTPGetIt = HTTPGetIt(http: HTTPWrapper())
         getIt.GetMeGoogle{html in
             (self.view as! FirstCustomView).webView.loadHTMLString(html!, baseURL: nil)
         }

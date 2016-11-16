@@ -7,13 +7,15 @@
 //
 
 import Foundation
-import Alamofire
 
 class HTTPGetIt  {
+    var http: HTTPActions!
+    
+    init(http: HTTPActions){
+        self.http = http
+    }
+    
     func GetMeGoogle(handler: (String?) -> ()){
-        Alamofire.request(.GET, "https://www.google.com")
-        .responseString{response in
-            handler(response.result.value)
-        }
+        http.GetRequest("https://www.google.com", handler: handler)
     }
 }
