@@ -134,6 +134,7 @@
 				E1D424341C72D00E00CF8327 /* Sources */,
 				E1D424351C72D00E00CF8327 /* Frameworks */,
 				E1D424361C72D00E00CF8327 /* Resources */,
+				E1A020621DDC0AF3005FEA5A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,6 +221,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1A020621DDC0AF3005FEA5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1D424341C72D00E00CF8327 /* Sources */ = {
